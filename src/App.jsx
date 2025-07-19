@@ -3,48 +3,51 @@ import './App.css'
 function App() {
   return (
     <>
-     <div className="navbar">
-      <div className="glitch">Travelyn</div>
-      <div>
-        <a href="#beranda">Beranda</a>
-        <a href="#tentang">Tentang Kami</a>
-        <a href="#layanan">Layanan</a>
+      {/* Navbar */}
+      <div className="navbar">
+        <div className="glitch">Travelyn</div>
+        <div>
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
+        </div>
       </div>
-    </div>
 
-
-      {/* Beranda (Hero + Zona Provinsi) */}
+      {/* Beranda (Hero) */}
       <section className="hero" id="beranda">
         <div className="hero-image">
           <img src="/image/pantai.jpg" alt="Gambar Pantai" />
           <div className="hero-overlay">
-           <h1 className="sliced-text">TRAVELYN</h1>
-           <p className="sliced-text-desc">Travel murah, harga bersahabat, dan layanan terpercaya.</p>
+            <h1 className="slice-text" data-text="TRAVELYN">TRAVELYN</h1>
+            <p className="slice-text" data-text="Travel murah, harga bersahabat, dan layanan terpercaya.">
+              Travel murah, harga bersahabat, dan layanan terpercaya.
+            </p>
             <div className="button-group">
               <button className="btn-orange">Kirim Pesan</button>
               <button className="btn-purple">Pesan Armada</button>
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="section">
-          <h2>LINTASAN MUARA TRAVEL</h2>
-          <div className="grid">
-            <div className="card">
-              <img src="/image/bandung.jpg" alt="Zona Jawa Barat" />
-              <h3>Zona Jawa Barat</h3>
-              <p>Purwakarta, Bandung, Bekasi, dll</p>
-            </div>
-            <div className="card">
-              <img src="/image/prambanan.jpg" alt="Zona Jawa Tengah" />
-              <h3>Zona Jawa Tengah</h3>
-              <p>Semarang, Jogja, Solo, dll</p>
-            </div>
-            <div className="card">
-              <img src="/image/bali.jpg" alt="Zona Bali" />
-              <h3>Zona Bali</h3>
-              <p>Denpasar, Badung, Gianyar, dll</p>
-            </div>
+      {/* Zona Provinsi */}
+      <section className="section">
+        <h2>LINTASAN MUARA TRAVEL</h2>
+        <div className="grid">
+          <div className="card">
+            <img src="/image/bandung.jpg" alt="Zona Jawa Barat" />
+            <h3>Zona Jawa Barat</h3>
+            <p>Purwakarta, Bandung, Bekasi, dll</p>
+          </div>
+          <div className="card">
+            <img src="/image/prambanan.jpg" alt="Zona Jawa Tengah" />
+            <h3>Zona Jawa Tengah</h3>
+            <p>Semarang, Jogja, Solo, dll</p>
+          </div>
+          <div className="card">
+            <img src="/image/bali.jpg" alt="Zona Bali" />
+            <h3>Zona Bali</h3>
+            <p>Denpasar, Badung, Gianyar, dll</p>
           </div>
         </div>
       </section>

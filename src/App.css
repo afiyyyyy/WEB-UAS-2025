@@ -1,3 +1,4 @@
+/* === Navbar === */
 .navbar {
   background-color: #4b2035;
   color: white;
@@ -14,6 +15,7 @@
   font-weight: bold;
 }
 
+/* === Hero Section === */
 .hero-image {
   position: relative;
   width: 100%;
@@ -43,6 +45,7 @@
   text-align: center;
 }
 
+/* === Buttons === */
 .button-group {
   margin-top: 1.5rem;
 }
@@ -66,11 +69,13 @@ button {
   color: white;
 }
 
+/* === Section === */
 .section {
   padding: 3rem 2rem;
   text-align: center;
 }
 
+/* === Grid & Cards === */
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +88,12 @@ button {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -93,6 +104,7 @@ button {
   margin: 1rem 0 0.5rem;
 }
 
+/* === Footer === */
 footer {
   background-color: #4b2035;
   color: white;
@@ -102,6 +114,7 @@ footer {
   flex-wrap: wrap;
 }
 
+/* === Tentang Kami === */
 .tentang-grid {
   display: flex;
   flex-wrap: wrap;
@@ -122,6 +135,7 @@ footer {
   max-width: 600px;
 }
 
+/* === About Image Style === */
 .about-image {
   width: 100%;
   max-height: 300px;
@@ -130,13 +144,14 @@ footer {
   margin: 2rem 0;
 }
 
-/* === Gaya Glitch untuk Navbar === */
+/* === Glitch Effect for Navbar Brand === */
 .glitch {
   position: relative;
   color: white;
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 .glitch::before,
 .glitch::after {
   content: 'Travelyn';
@@ -147,11 +162,13 @@ footer {
   color: white;
   background: transparent;
 }
+
 .glitch::before {
   animation: glitchTop 2s infinite linear alternate-reverse;
   top: -2px;
   color: #f0f;
 }
+
 .glitch::after {
   animation: glitchBottom 2s infinite linear alternate-reverse;
   top: 2px;
@@ -170,83 +187,50 @@ footer {
   100% { clip-path: inset(90% 0 0 0); transform: translateX(1px); }
 }
 
-/* === Hover Zoom Card === */
-.card {
-  max-width: 300px;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-}
-
-.sliced-text {
+/* === Sliced Text Animation (Hero) === */
+.slice-text {
   position: relative;
+  font-weight: bold;
   display: inline-block;
-  font-size: 3rem;
   overflow: hidden;
-  color: white;
 }
 
-.sliced-text::after {
-  content: '';
+.slice-text::before,
+.slice-text::after {
+  content: attr(data-text);
   position: absolute;
-  top: 50%;
   left: 0;
   width: 100%;
-  height: 2px;
-  background: rgba(255, 255, 255, 0.6);
-  animation: sliceAnim 2s infinite;
-}
-
-@keyframes sliceAnim {
-  0% {
-    top: 50%;
-    opacity: 0;
-  }
-  50% {
-    top: 50%;
-    opacity: 1;
-  }
-  100% {
-    top: 50%;
-    opacity: 0;
-  }
-}
-
-.sliced-text-desc {
-  position: relative;
-  display: inline-block;
-  font-size: 1.2rem;
   color: white;
   overflow: hidden;
+  clip-path: inset(0 0 0 0);
+  animation: sliceReveal 3s infinite ease-in-out;
 }
 
-.sliced-text-desc::after {
-  content: '';
-  position: absolute;
-  top: 60%;
-  left: 0;
-  width: 100%;
-  height: 1.5px;
-  background: rgba(255, 255, 255, 0.4);
-  animation: sliceDescAnim 2.5s infinite ease-in-out;
+.slice-text::before {
+  top: 0;
+  animation-delay: 0s;
 }
 
-@keyframes sliceDescAnim {
+.slice-text::after {
+  top: 0;
+  animation-delay: 0.15s;
+}
+
+@keyframes sliceReveal {
   0% {
-    top: 60%;
-    opacity: 0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 10%, 0% 10%);
+  }
+  25% {
+    clip-path: polygon(0% 20%, 100% 20%, 100% 30%, 0% 30%);
   }
   50% {
-    top: 60%;
-    opacity: 1;
+    clip-path: polygon(0% 40%, 100% 40%, 100% 50%, 0% 50%);
+  }
+  75% {
+    clip-path: polygon(0% 60%, 100% 60%, 100% 70%, 0% 70%);
   }
   100% {
-    top: 60%;
-    opacity: 0;
+    clip-path: polygon(0% 80%, 100% 80%, 100% 90%, 0% 90%);
   }
 }
