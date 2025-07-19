@@ -24,10 +24,10 @@ function App() {
               Travel murah, harga bersahabat, dan layanan terpercaya.
             </p>
             <div className="button-group">
-            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="btn-orange">
+            <a href="https://wa.me/6283894737745" target="_blank" rel="noopener noreferrer" className="btn-orange">
               Kirim Pesan
             </a>
-            <a href="https://www.instagram.com/akun_travelmu" target="_blank" rel="noopener noreferrer" className="btn-purple">
+            <a href="https://www.instagram.com/fi_asahina?igsh=a2I3bnJobGZrcWZy" target="_blank" rel="noopener noreferrer" className="btn-purple">
               Pesan Armada
             </a>
           </div>
@@ -87,7 +87,7 @@ function App() {
         <h2>LAYANAN KAMI</h2>
         <div className="grid">
           <div className="card">
-            <img src="/image/travel.jpg" alt="Travel Reguler" />
+            <img src="/image/traveluniv.jpg" alt="Travel Reguler" />
             <h3>Travel Reguler</h3>
           </div>
           <div className="card">
