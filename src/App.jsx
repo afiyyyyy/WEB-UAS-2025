@@ -10,6 +10,7 @@ function App() {
           <a href="#beranda">Beranda</a>
           <a href="#tentang">Tentang Kami</a>
           <a href="#layanan">Layanan</a>
+          <a href="#lokasi">Lokasi</a>
         </div>
       </div>
 
@@ -45,6 +46,7 @@ function App() {
         </div>
       </section>
 
+      {/* Tentang Kami */}
       <section className="section" id="tentang">
         <h2>TENTANG KAMI</h2>
         <p>
@@ -63,7 +65,6 @@ function App() {
           mempercayakan perjalanan Anda bersama Muara Travel.
         </p>
       </section>
-
 
       {/* Layanan */}
       <section className="section" id="layanan">
@@ -85,6 +86,36 @@ function App() {
             <img src="/layanan4.jpg" alt="Layanan Wisata" />
             <h3>Layanan Wisata</h3>
           </div>
+        </div>
+      </section>
+
+      {/* Lokasi */}
+      <section className="section" id="lokasi">
+        <h2>LOKASI KAMI</h2>
+
+        <div className="map-container">
+          <iframe
+            title="Muara Travel Location"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.187534125405!2d110.80448347423695!3d-7.223761692781735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e712c0c4c33c837%3A0x1a0b33d6a0a79eac!2sMuara%20Travel!5e0!3m2!1sen!2sid!4v1721382886535!5m2!1sen!2sid"
+            width="100%"
+            height="300"
+            allowFullScreen=""
+            loading="lazy"
+            style={{ border: 0 }}
+          ></iframe>
+        </div>
+
+        <h3 style={{ marginTop: '2rem' }}>Video Profil</h3>
+        <div className="video-container">
+          <iframe
+            width="100%"
+            height="315"
+            src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+            title="YouTube video"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
 
