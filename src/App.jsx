@@ -18,7 +18,7 @@ function App() {
         <div className="hero-image">
           <img src="/image/pantai.jpg" alt="Gambar Pantai" />
           <div className="hero-overlay">
-            <h1>MUARA TRAVEL</h1>
+            <h1>TRAVELYN</h1>
             <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
             <div className="button-group">
               <button className="btn-orange">Kirim Pesan</button>
@@ -36,7 +36,7 @@ function App() {
               <p>Purwakarta, Bandung, Bekasi, dll</p>
             </div>
             <div className="card">
-              <img src="/image/jateng.jpg" alt="Zona Jawa Tengah" />
+              <img src="/image/prambanan.jpg" alt="Zona Jawa Tengah" />
               <h3>Zona Jawa Tengah</h3>
               <p>Semarang, Jogja, Solo, dll</p>
             </div>
@@ -100,12 +100,12 @@ function App() {
       {/* Footer */}
       <footer>
         <div>
-          <h3>Muara Travel</h3>
+          <h3>TravelYN</h3>
           <p>Jalan Raya Pati Tayu Kulon No. 176, Pati, Jawa Tengah</p>
         </div>
         <div>
           <p>📞 0821 4662 4432</p>
-          <p>✉ info@muaratravel.com</p>
+          <p>✉ info@travelYN.com</p>
         </div>
       </footer>
     </>
