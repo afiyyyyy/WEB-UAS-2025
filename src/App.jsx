@@ -45,13 +45,25 @@ function App() {
         </div>
       </section>
 
-      {/* Tentang Kami */}
       <section className="section" id="tentang">
         <h2>TENTANG KAMI</h2>
         <p>
-          Muara Travel memiliki track record yang panjang dalam menjalankan bisnis travel. Kami siap mengantar Anda dengan armada lengkap dan layanan door to door.
+          Muara Travel adalah perusahaan transportasi profesional yang telah beroperasi sejak tahun 2012, 
+          melayani ribuan pelanggan di berbagai kota di Indonesia. Kami berkomitmen untuk memberikan layanan perjalanan 
+          yang aman, nyaman, dan tepat waktu dengan dukungan armada terbaik dan sopir-sopir berpengalaman.
+        </p>
+        <p>
+          Layanan kami mencakup perjalanan antar kota, pengiriman paket kilat, carter kendaraan, dan juga paket wisata 
+          eksklusif ke berbagai destinasi populer. Dengan sistem pemesanan yang mudah dan layanan customer support yang 
+          responsif, kami siap menjadi mitra perjalanan Anda kapan pun dibutuhkan.
+        </p>
+        <p>
+          Kami percaya bahwa perjalanan yang menyenangkan dimulai dari layanan yang berkualitas. Oleh karena itu, kami 
+          selalu mengutamakan kebersihan kendaraan, keamanan perjalanan, serta kenyamanan penumpang. Terima kasih telah 
+          mempercayakan perjalanan Anda bersama Muara Travel.
         </p>
       </section>
+
 
       {/* Layanan */}
       <section className="section" id="layanan">
