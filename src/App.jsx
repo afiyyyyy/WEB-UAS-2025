@@ -13,22 +13,22 @@ function App() {
         </div>
       </div>
 
-      {/* Beranda (Hero) */}
-      <section className="hero" id="beranda">
-        <div className="hero-image">
-          <img src="/image/pantai.jpg" alt="Gambar Pantai" />
-          <div className="hero-overlay">
-            <h1 className="slice-text" data-text="TRAVELYN">TRAVELYN</h1>
-            <p className="slice-text" data-text="Travel murah, harga bersahabat, dan layanan terpercaya.">
-              Travel murah, harga bersahabat, dan layanan terpercaya.
-            </p>
-            <div className="button-group">
-              <button className="btn-orange">Kirim Pesan</button>
-              <button className="btn-purple">Pesan Armada</button>
-            </div>
-          </div>
-        </div>
-      </section>
+     <section className="hero" id="beranda">
+  <div className="hero-image">
+    <img src="/image/pantai.jpg" alt="Gambar Pantai" />
+    <div className="hero-overlay">
+      <h1 className="text-slice" data-text="TRAVELYN">TRAVELYN</h1>
+      <p className="desc-slice" data-text="Travel murah, harga bersahabat, dan layanan terpercaya.">
+        Travel murah, harga bersahabat, dan layanan terpercaya.
+      </p>
+      <div className="button-group">
+        <button className="btn-orange">Kirim Pesan</button>
+        <button className="btn-purple">Pesan Armada</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Zona Provinsi */}
       <section className="section">

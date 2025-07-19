@@ -234,3 +234,129 @@ footer {
     clip-path: polygon(0% 80%, 100% 80%, 100% 90%, 0% 90%);
   }
 }
+
+.text-slice {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  animation: sliceLines 2s infinite;
+}
+
+.desc-slice {
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  animation: sliceLinesDesc 3s infinite;
+}
+
+@keyframes sliceLines {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+    transform: translateY(0);
+  }
+  25% {
+    clip-path: polygon(0 20%, 100% 20%, 100% 40%, 0 40%);
+    transform: translateY(1px);
+  }
+  50% {
+    clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+    transform: translateY(-1px);
+  }
+  75% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0 80%);
+    transform: translateY(1px);
+  }
+  100% {
+    clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+    transform: translateY(0);
+  }
+}
+
+@keyframes sliceLinesDesc {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 10%, 0 10%);
+  }
+  20% {
+    clip-path: polygon(0 15%, 100% 15%, 100% 25%, 0 25%);
+  }
+  40% {
+    clip-path: polygon(0 30%, 100% 30%, 100% 40%, 0 40%);
+  }
+  60% {
+    clip-path: polygon(0 45%, 100% 45%, 100% 55%, 0 55%);
+  }
+  80% {
+    clip-path: polygon(0 60%, 100% 60%, 100% 70%, 0 70%);
+  }
+  100% {
+    clip-path: polygon(0 75%, 100% 75%, 100% 85%, 0 85%);
+  }
+}
+
+.text-slice {
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.text-slice::before,
+.text-slice::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #ff5;
+  overflow: hidden;
+}
+
+.text-slice::before {
+  clip-path: polygon(0 20%, 100% 20%, 100% 40%, 0 40%);
+  animation: sliceTop 2s infinite ease-in-out;
+}
+
+.text-slice::after {
+  clip-path: polygon(0 60%, 100% 60%, 100% 80%, 0 80%);
+  animation: sliceBottom 2s infinite ease-in-out;
+  color: #0ff;
+}
+
+@keyframes sliceTop {
+  0%, 100% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+}
+
+@keyframes sliceBottom {
+  0%, 100% { transform: translateX(2px); }
+  50% { transform: translateX(-2px); }
+}
+
+.desc-slice {
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.desc-slice::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: #aaa;
+  clip-path: polygon(0 50%, 100% 50%, 100% 65%, 0 65%);
+  animation: sliceDesc 2.5s infinite ease-in-out;
+}
+
+@keyframes sliceDesc {
+  0%, 100% { transform: translateX(-1px); }
+  50% { transform: translateX(1px); }
+}
