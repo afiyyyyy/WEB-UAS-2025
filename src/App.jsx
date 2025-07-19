@@ -1,100 +1,94 @@
-import React from 'react';
-import './App.css';
-import { FaWhatsapp } from 'react-icons/fa';
+import './App.css'
 
-export default function App() {
+function App() {
   return (
-    <div className="app-container">
+    <>
       {/* Navbar */}
-      <nav className="navbar">
-        <div className="logo">
-          <img src="/img/logo.svg" alt="Logo" className="logo-img" />
-          <span>Travellynn</span>
+      <div className="navbar">
+        <div>Muara Travel</div>
+        <div>
+          <a href="#beranda">Beranda</a>
+          <a href="#tentang">Tentang Kami</a>
+          <a href="#layanan">Layanan</a>
         </div>
-        <ul className="nav-links">
-          <li>Beranda</li>
-          <li>Tentang Kami</li>
-          <li>Layanan</li>
-        </ul>
-      </nav>
+      </div>
 
       {/* Hero Section */}
-      <section className="hero-banner">
-        <div className="hero-overlay">
-          <h5>WELCOME</h5>
-          <h1>MUARA TRAVEL</h1>
-          <p>
-            Travel murah, harga bersahabat, dan layanan terpercaya. Pesan tiket travel muara dengan mudah,
-            efisien, kapanpun dan di manapun. Melayani rute dengan berbagai jalur mulai dari wilayah Jawa, Bali, dan Sumatera.
-          </p>
-          <div className="hero-buttons">
-            <button className="btn orange">Kirim Pesan</button>
-            <button className="btn purple">Pesan Armada</button>
-          </div>
+      <section className="hero" id="beranda">
+        <h1>MUARA TRAVEL</h1>
+        <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
+        <div className="button-group">
+          <button className="btn-orange">Kirim Pesan</button>
+          <button className="btn-purple">Pesan Armada</button>
         </div>
       </section>
 
-      {/* Zona Travel */}
-      <section className="zone-section">
-        <h2>Lintasan Muara Travel</h2>
-        <div className="zones">
-          {['Jawa Barat', 'Jawa Tengah', 'Banten', 'Bali', 'Jawa Timur', 'Sumatera'].map((zone, index) => (
-            <div key={index} className="zone-card">
-              <img src={`/img/zone${index + 1}.jpg`} alt={`Zona ${zone}`} />
-              <h3>Zona {zone}</h3>
-              <p>Deskripsi daerah di {zone}...</p>
-            </div>
-          ))}
+      {/* Zona Layanan */}
+      <section className="section">
+        <h2>LINTASAN MUARA TRAVEL</h2>
+        <div className="grid">
+          <div className="card">
+            <img src="/zona-jabar.jpg" alt="Zona Jawa Barat" />
+            <h3>Zona Jawa Barat</h3>
+            <p>Purwakarta, Bandung, Bekasi, dll</p>
+          </div>
+          <div className="card">
+            <img src="/zona-jateng.jpg" alt="Zona Jawa Tengah" />
+            <h3>Zona Jawa Tengah</h3>
+            <p>Semarang, Jogja, Solo, dll</p>
+          </div>
+          <div className="card">
+            <img src="/zona-bali.jpg" alt="Zona Bali" />
+            <h3>Zona Bali</h3>
+            <p>Denpasar, Badung, Gianyar, dll</p>
+          </div>
         </div>
       </section>
 
       {/* Tentang Kami */}
-      <section className="about-section">
-        <h2>Tentang Kami</h2>
-        <div className="about-content">
-          <img src="/img/armada.jpg" alt="Armada" />
-          <div>
-            <p>
-              Muara Travel memiliki track record yang panjang dalam menjalankan bisnis travel. Kami memiliki tim ramah dan profesional yang
-              siap mengantarkan ke tujuan Anda. Armada lengkap, dicek rutin, aman dan nyaman.
-            </p>
-            <p>
-              Kami juga merupakan jasa travel door to door. Perjalanan aman, tanpa khawatir. Dari pemesanan sampai layanan lapangan, semua
-              kami tangani profesional.
-            </p>
-            <button className="btn orange">Galeri Armada</button>
+      <section className="section" id="tentang">
+        <h2>TENTANG KAMI</h2>
+        <p>
+          Muara Travel memiliki track record yang panjang dalam menjalankan bisnis travel. Kami siap mengantar Anda dengan armada lengkap dan layanan door to door.
+        </p>
+      </section>
+
+      {/* Layanan */}
+      <section className="section" id="layanan">
+        <h2>LAYANAN KAMI</h2>
+        <div className="grid">
+          <div className="card">
+            <img src="/layanan1.jpg" alt="Travel Reguler" />
+            <h3>Travel Reguler</h3>
+          </div>
+          <div className="card">
+            <img src="/layanan2.jpg" alt="Pengiriman Paket" />
+            <h3>Pengiriman Paket Kilat</h3>
+          </div>
+          <div className="card">
+            <img src="/layanan3.jpg" alt="Carter Mobil" />
+            <h3>Carter Mobil</h3>
+          </div>
+          <div className="card">
+            <img src="/layanan4.jpg" alt="Layanan Wisata" />
+            <h3>Layanan Wisata</h3>
           </div>
         </div>
       </section>
 
-      {/* Layanan Kami */}
-      <section className="service-section">
-        <h2>Untuk Layanan Kami :</h2>
-        <div className="services">
-          {['Travel Reguler', 'Pengiriman Paket kilat', 'Carter Mobil', 'Layanan Wisata'].map((layanan, index) => (
-            <div key={index} className="service-card">
-              <img src={`/img/service${index + 1}.jpg`} alt={layanan} />
-              <h3>{layanan}</h3>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Footer */}
-      <footer className="footer">
-        <div className="footer-brand">Muara Travel</div>
-        <div className="footer-links">
-          <span>Beranda</span>
-          <span>Tentang Kami</span>
-          <span>Layanan</span>
+      <footer>
+        <div>
+          <h3>Muara Travel</h3>
+          <p>Jalan Raya Pati Tayu Kulon No. 176, Pati, Jawa Tengah</p>
         </div>
-        <div className="footer-contact">
-          <p>Jalan Raya Pati Tayu Kulon No.176, Pati, Jawa Tengah</p>
+        <div>
+          <p>📞 0821 4662 4432</p>
+          <p>✉ info@muaratravel.com</p>
         </div>
-        <a href="https://wa.me/6281234567890" className="wa-button">
-          <FaWhatsapp size={28} />
-        </a>
       </footer>
-    </div>
-  );
+    </>
+  )
 }
+
+export default App
