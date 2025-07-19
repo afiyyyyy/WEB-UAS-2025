@@ -1,393 +1,283 @@
-/* src/App.css */
-
+/* Reset dan Global */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-html, body {
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
 
-#root {
-  width: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
+body, html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
   color: #333;
 }
 
-/* === Travel Buddy === */
+.app-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
-  padding: 20px 5vw;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  padding: 1.2rem 0;
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
   position: sticky;
   top: 0;
-  z-index: 1000;
-  width: 100%;
+  z-index: 999;
 }
 
 .logo {
+  font-size: 1.8rem;
   font-weight: bold;
-  font-size: 1.5em;
   color: #0077cc;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  gap: 1.5rem;
 }
 
 .nav-links li {
+  font-size: 1rem;
   cursor: pointer;
+  transition: color 0.2s;
 }
 
-.cta {
-  background: #0077cc;
+.nav-links li:hover {
+  color: #0077cc;
+}
+
+.nav-links .cta {
+  background-color: #0077cc;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
+.nav-links .cta:hover {
+  background-color: #005fa3;
+}
+
+/* Hero Section */
 .hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #0077cc;
-  color: white;
-  padding: 80px 5vw;
-  min-height: 100vh;
+  justify-content: space-between;
+  margin: 3rem 0;
   flex-wrap: wrap;
-  width: 100%;
-  overflow: hidden;
-  box-sizing: border-box;
+  gap: 2rem;
 }
 
 .hero-text {
-  flex: 1;
-  min-width: 280px;
+  max-width: 550px;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
 }
 
 .hero img {
-  flex: 1;
-  max-width: 480px;
-  margin-top: 20px;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  max-width: 500px;
 }
 
+/* Features Section */
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  padding: 80px 5vw;
-  background: #f9f9f9;
-  width: 100%;
-  box-sizing: border-box;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
 .feature {
-  background: white;
-  border-radius: 12px;
-  padding: 30px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .feature img {
-  max-height: 180px;
-  width: auto;
-  height: auto;
   max-width: 100%;
-  display: block;
-  margin: 0 auto 20px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.feature h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
 }
 
 .feature button {
-  background: #0077cc;
+  background-color: #0077cc;
   color: white;
+  padding: 0.6rem 1.2rem;
   border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  margin-top: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.cta-banner {
-  text-align: center;
-  padding: 80px 5vw;
-  background: #eaf4ff;
+.feature button:hover {
+  background-color: #005fa3;
+}
+
+/* Map & Video Section */
+.map-video-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.video-card iframe {
   width: 100%;
-  box-sizing: border-box;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* CTA Banner */
+.cta-banner {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 10px;
+  margin: 3rem 0;
 }
 
 .cta-banner h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
-footer {
-  background: #333;
-  color: white;
-  padding: 60px 5vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
+.download-buttons .cta {
+  background-color: white;
+  color: #0077cc;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.download-buttons .cta:hover {
+  background-color: #e0f0ff;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-radius: 10px;
 }
 
 .footer-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  color: #0077cc;
+  margin-bottom: 1rem;
 }
 
 .footer-links {
   display: flex;
-  gap: 60px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 2rem;
 }
 
-.footer-links h4 {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  color: #88c9ff;
+.footer-links div h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links div p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+  color: #444;
+}
+
+.student-info {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.social-media-icons a {
+  color: #0077cc;
+  transition: color 0.2s;
+}
+
+.social-media-icons a:hover {
+  color: #005fa3;
 }
 
 .footer-copy {
-  font-size: 0.9rem;
-  color: #bbb;
-  margin-top: 20px;
-  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero img {
-    max-width: 100%;
+  .map-video-section {
+    grid-template-columns: 1fr;
   }
 
   .nav-links {
     flex-wrap: wrap;
-    gap: 10px;
-  }
-}
-
-/* === LAYOUT LAROYYBA === */
-.main-layout {
-  display: flex;
-  min-height: 100vh;
-  width: 100%;
-}
-
-.main-content {
-  flex: 1;
-  overflow-y: auto;
-  background-color: #f5f5f5;
-  padding: 20px;
-}
-
-/* === SIDEBAR === */
-.sidebar {
-  width: 250px;
-  background-color: #1e3a8a;
-  color: white;
-  height: 100vh;
-  padding: 24px;
-  position: sticky;
-  top: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.sidebar h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-.sidebar a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 8px 0;
-  transition: color 0.3s ease;
-}
-
-.sidebar a:hover {
-  color: #facc15;
-} 
-
-/* === LAROYYBA HERO === */
-.laroyba-hero {
-  padding: 60px 40px;
-  background-color: #ffffff;
-}
-
-.laroyba-hero h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #1e3a8a;
-}
-
-.laroyba-hero p {
-  font-size: 1.2rem;
-  color: #555;
-}
-
-/* === WRAPPER untuk konten biar sejajar sidebar === */
-.content-wrapper {
-  padding-left: 0;
-  padding-right: 20px;
-  max-width: 100%;
-}
-
-@media (min-width: 768px) {
-  .content-wrapper {
-    padding-left: 30px;
-  }
-}
-
-/* === WRAPPER fix hero/features agar gak ketiban sidebar === */
-.content-wrapper section {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-@media (min-width: 768px) {
-  .content-wrapper section {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-
-/* === Fixing Responsive Sidebar and Main Layout === */
-@media (max-width: 768px) {
-  .main-layout {
-    flex-direction: column;
+    justify-content: center;
   }
 
-  .sidebar {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .download-buttons .cta {
     width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  .main-content {
-    padding: 20px 10px;
-  }
-
-  .content-wrapper {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .content-wrapper section {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-top: 1rem;
   }
 }
-
-.map-video-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-}
-
-.card {
-  flex: 1 1 500px;
-  max-width: 550px;
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.card iframe {
-  width: 100%;
-  height: 315px;
-  border-radius: 12px;
-  border: none;
-}
-
-.student-info {
-  margin: 2rem auto 1rem;
-  padding: 1rem;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-  max-width: 500px;
-  font-size: 14px;
-  color: #333;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  text-align: left;
-}
-.student-info p {
-  margin: 0.2rem 0;
-}
-
-
-@media (max-width: 768px) {
-  .map-video-section {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;             /* Lebih besar jaraknya antar icon */
-  font-size: 40px;       /* Ukuran icon dibesarkan */
-  margin-top: 40px;      /* Jarak dari card biodata */
-}
-
-.social-icons a {
-  color: #4c51bf;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #00e6e6;
-  transform: scale(1.3);  /* Membesar lebih signifikan saat hover */
-}
-
