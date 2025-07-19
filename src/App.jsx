@@ -31,17 +31,17 @@ function App() {
           <h2>LINTASAN MUARA TRAVEL</h2>
           <div className="grid">
             <div className="card">
-              <img src="/zona-jabar.jpg" alt="Zona Jawa Barat" />
+              <img src="/image/bandung.jpg" alt="Zona Jawa Barat" />
               <h3>Zona Jawa Barat</h3>
               <p>Purwakarta, Bandung, Bekasi, dll</p>
             </div>
             <div className="card">
-              <img src="/zona-jateng.jpg" alt="Zona Jawa Tengah" />
+              <img src="/image/jateng.jpg" alt="Zona Jawa Tengah" />
               <h3>Zona Jawa Tengah</h3>
               <p>Semarang, Jogja, Solo, dll</p>
             </div>
             <div className="card">
-              <img src="/zona-bali.jpg" alt="Zona Bali" />
+              <img src="/image/bali.jpg" alt="Zona Bali" />
               <h3>Zona Bali</h3>
               <p>Denpasar, Badung, Gianyar, dll</p>
             </div>
