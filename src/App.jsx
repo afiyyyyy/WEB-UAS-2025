@@ -13,7 +13,7 @@ function App() {
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/* Beranda (Hero + Zona Provinsi) */}
       <section className="hero" id="beranda">
         <h1>MUARA TRAVEL</h1>
         <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
@@ -21,26 +21,26 @@ function App() {
           <button className="btn-orange">Kirim Pesan</button>
           <button className="btn-purple">Pesan Armada</button>
         </div>
-      </section>
 
-      {/* Zona Layanan */}
-      <section className="section">
-        <h2>LINTASAN MUARA TRAVEL</h2>
-        <div className="grid">
-          <div className="card">
-            <img src="/zona-jabar.jpg" alt="Zona Jawa Barat" />
-            <h3>Zona Jawa Barat</h3>
-            <p>Purwakarta, Bandung, Bekasi, dll</p>
-          </div>
-          <div className="card">
-            <img src="/zona-jateng.jpg" alt="Zona Jawa Tengah" />
-            <h3>Zona Jawa Tengah</h3>
-            <p>Semarang, Jogja, Solo, dll</p>
-          </div>
-          <div className="card">
-            <img src="/zona-bali.jpg" alt="Zona Bali" />
-            <h3>Zona Bali</h3>
-            <p>Denpasar, Badung, Gianyar, dll</p>
+        {/* Zona Layanan dipindah ke sini */}
+        <div className="section">
+          <h2>LINTASAN MUARA TRAVEL</h2>
+          <div className="grid">
+            <div className="card">
+              <img src="/zona-jabar.jpg" alt="Zona Jawa Barat" />
+              <h3>Zona Jawa Barat</h3>
+              <p>Purwakarta, Bandung, Bekasi, dll</p>
+            </div>
+            <div className="card">
+              <img src="/zona-jateng.jpg" alt="Zona Jawa Tengah" />
+              <h3>Zona Jawa Tengah</h3>
+              <p>Semarang, Jogja, Solo, dll</p>
+            </div>
+            <div className="card">
+              <img src="/zona-bali.jpg" alt="Zona Bali" />
+              <h3>Zona Bali</h3>
+              <p>Denpasar, Badung, Gianyar, dll</p>
+            </div>
           </div>
         </div>
       </section>

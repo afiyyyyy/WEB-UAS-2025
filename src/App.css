@@ -1,3 +1,15 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
 .navbar {
   background-color: #4b2035;
   color: white;
@@ -5,6 +17,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar a {
@@ -14,15 +29,26 @@
   font-weight: bold;
 }
 
+/* Hero Section */
 .hero {
-  background-image: url('/path-to-hero.jpg');
+  background-image: url('/path-to-hero.jpg'); /* Ganti dengan path gambar yang valid */
   background-size: cover;
   background-position: center;
   color: white;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 3rem;
   text-align: center;
 }
 
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Tombol */
 .button-group {
   margin-top: 1.5rem;
 }
@@ -46,16 +72,20 @@ button {
   color: white;
 }
 
+/* Section Umum */
 .section {
   padding: 3rem 2rem;
   text-align: center;
+  background-color: #fdfdfd;
 }
 
+/* Grid Kartu */
 .grid {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .card {
@@ -63,16 +93,27 @@ button {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background-color: #fff;
+  text-align: left;
 }
 
 .card img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .card h3 {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 1rem 0.5rem;
 }
 
+.card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Footer */
 footer {
   background-color: #4b2035;
   color: white;
@@ -80,4 +121,9 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  font-size: 0.95rem;
+}
+
+footer h3 {
+  margin-bottom: 0.5rem;
 }
