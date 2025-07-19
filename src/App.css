@@ -282,3 +282,40 @@ footer {
   height: 300px;
   border-radius: 10px;
 }
+
+/* Tombol di Bawah (Setelah Footer) */
+.bottom-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.bottom-buttons .btn-orange,
+.bottom-buttons .btn-purple {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.bottom-buttons .btn-orange {
+  background-color: #f1672c;
+  color: white;
+}
+
+.bottom-buttons .btn-orange:hover {
+  background-color: #d2541f;
+}
+
+.bottom-buttons .btn-purple {
+  background-color: #5a2c45;
+  color: white;
+}
+
+.bottom-buttons .btn-purple:hover {
+  background-color: #3f1d32;
+}
