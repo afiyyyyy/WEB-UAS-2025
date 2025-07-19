@@ -259,3 +259,26 @@ footer {
   0%, 100% { transform: translateX(1px); }
   50% { transform: translateX(-1px); }
 }
+
+/* === Lokasi Grid === */
+.lokasi-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 2rem;
+}
+
+.lokasi-map,
+.lokasi-video {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.lokasi-map iframe,
+.lokasi-video iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}

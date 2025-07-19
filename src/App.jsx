@@ -10,10 +10,11 @@ function App() {
           <a href="#beranda">Beranda</a>
           <a href="#tentang">Tentang Kami</a>
           <a href="#layanan">Layanan</a>
+          <a href="#lokasi">Lokasi</a>
         </div>
       </div>
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="hero" id="beranda">
         <div className="hero-image">
           <img src="/image/pantai.jpg" alt="Gambar Pantai" />
@@ -92,6 +93,31 @@ function App() {
           <div className="card">
             <img src="/image/layanan.jpg" alt="Layanan Wisata" />
             <h3>Layanan Wisata</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* Lokasi */}
+      <section className="section" id="lokasi">
+        <h2>LOKASI KAMI</h2>
+        <div className="lokasi-grid">
+          <div className="lokasi-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63361.67460165019!2d111.0079739!3d-6.7575374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70cf3b1cdac42b%3A0x4dd54288f2e4d4f3!2sPati%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1625300523515!5m2!1sid!2sid"
+              width="100%" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps Lokasi"
+            ></iframe>
+          </div>
+          <div className="lokasi-video">
+            <iframe
+              width="100%" height="300"
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              title="YouTube Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>
