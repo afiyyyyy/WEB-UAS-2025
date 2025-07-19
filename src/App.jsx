@@ -53,7 +53,7 @@ function App() {
       <section className="section" id="tentang">
         <h2>TENTANG KAMI</h2>
         <div className="tentang-grid">
-          <img src="/tentang-kami.jpg" alt="Tentang Kami" className="tentang-img" />
+          <img src="/image/tentangkami.jpg" alt="Tentang Kami" className="tentang-img" />
           <div className="tentang-text">
             <p>
               Muara Travel adalah perusahaan transportasi profesional yang telah beroperasi sejak tahun 2012, 
@@ -100,12 +100,12 @@ function App() {
       {/* Footer */}
       <footer>
         <div>
-          <h3>TravelYN</h3>
+          <h3>Travelyn</h3>
           <p>Jalan Raya Pati Tayu Kulon No. 176, Pati, Jawa Tengah</p>
         </div>
         <div>
           <p>📞 0821 4662 4432</p>
-          <p>✉ info@travelYN.com</p>
+          <p>✉ info@travelyn.com</p>
         </div>
       </footer>
     </>
