@@ -5,7 +5,7 @@ function App() {
     <>
       {/* Navbar */}
       <div className="navbar">
-        <div className="glitch">Travelyn</div>
+        <div className="glitch">TRAVELYN</div>
         <div>
           <a href="#beranda">Beranda</a>
           <a href="#tentang">Tentang Kami</a>
@@ -19,7 +19,7 @@ function App() {
         <div className="hero-image">
           <img src="/image/pantai.jpg" alt="Gambar Pantai" />
           <div className="hero-overlay">
-            <h1 className="text-slice" data-text="TRAVELYN">TRAVELYN</h1>
+            <h1 className="text-slice" data-text="TRAVELYN">ARMADA TRAVELYN</h1>
             <p className="desc-slice" data-text="Travel murah, harga bersahabat, dan layanan terpercaya.">
               Travel murah, harga bersahabat, dan layanan terpercaya.
             </p>
@@ -37,7 +37,7 @@ function App() {
 
       {/* Zona Provinsi */}
       <section className="section">
-        <h2>LINTASAN MUARA TRAVEL</h2>
+        <h2>LINTASAN ARMADA TRAVELYN</h2>
         <div className="grid">
           <div className="card">
             <img src="/image/bandung.jpg" alt="Zona Jawa Barat" />
@@ -134,7 +134,7 @@ function App() {
         </div>
         <div>
           <p>📞 0821 4662 4432</p>
-          <p>✉ info@travelyn.com</p>
+          <p>✉ info@armadatravelyn.com</p>
         </div>
       </footer>
     </>
