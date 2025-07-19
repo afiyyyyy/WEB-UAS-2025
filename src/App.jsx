@@ -64,7 +64,7 @@ function App() {
           <img src="/image/tentangkami.jpg" alt="Tentang Kami" className="tentang-img" />
           <div className="tentang-text">
             <p>
-              Muara Travel adalah perusahaan transportasi profesional yang telah beroperasi sejak tahun 2012, 
+              Travelyn adalah perusahaan transportasi profesional yang telah beroperasi sejak tahun 2012, 
               melayani ribuan pelanggan di berbagai kota di Indonesia. Kami berkomitmen untuk memberikan layanan perjalanan 
               yang aman, nyaman, dan tepat waktu dengan dukungan armada terbaik dan sopir-sopir berpengalaman.
             </p>
@@ -76,7 +76,7 @@ function App() {
             <p>
               Kami percaya bahwa perjalanan yang menyenangkan dimulai dari layanan yang berkualitas. Oleh karena itu, kami 
               selalu mengutamakan kebersihan kendaraan, keamanan perjalanan, serta kenyamanan penumpang. Terima kasih telah 
-              mempercayakan perjalanan Anda bersama Muara Travel.
+              mempercayakan perjalanan Anda bersama Travelyn.
             </p>
           </div>
         </div>
