@@ -24,9 +24,13 @@ function App() {
               Travel murah, harga bersahabat, dan layanan terpercaya.
             </p>
             <div className="button-group">
-              <button className="btn-orange">Kirim Pesan</button>
-              <button className="btn-purple">Pesan Armada</button>
-            </div>
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="btn-orange">
+              Kirim Pesan
+            </a>
+            <a href="https://www.instagram.com/akun_travelmu" target="_blank" rel="noopener noreferrer" className="btn-purple">
+              Pesan Armada
+            </a>
+          </div>
           </div>
         </div>
       </section>
