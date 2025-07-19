@@ -10,7 +10,6 @@ function App() {
           <a href="#beranda">Beranda</a>
           <a href="#tentang">Tentang Kami</a>
           <a href="#layanan">Layanan</a>
-          <a href="#lokasi">Lokasi</a>
         </div>
       </div>
 
@@ -24,8 +23,12 @@ function App() {
               Travel murah, harga bersahabat, dan layanan terpercaya.
             </p>
             <div className="button-group">
-              <button className="btn-orange">Kirim Pesan</button>
-              <button className="btn-purple">Pesan Armada</button>
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="btn-orange">
+                Kirim Pesan
+              </a>
+              <a href="https://www.instagram.com/akun_travelmu" target="_blank" rel="noopener noreferrer" className="btn-purple">
+                Pesan Armada
+              </a>
             </div>
           </div>
         </div>
@@ -98,21 +101,21 @@ function App() {
       </section>
 
       {/* Lokasi */}
-      <section className="section" id="lokasi">
+      <section className="section lokasi">
         <h2>LOKASI KAMI</h2>
         <div className="lokasi-grid">
           <div className="lokasi-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63361.67460165019!2d111.0079739!3d-6.7575374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70cf3b1cdac42b%3A0x4dd54288f2e4d4f3!2sPati%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1625300523515!5m2!1sid!2sid"
-              width="100%" height="300" style={{ border: 0 }} allowFullScreen="" loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.40612919929!2d110.333644!3d-7.801389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59f0c54d9c17%3A0x78db93c8b6971e5!2sYogyakarta!5e0!3m2!1sen!2sid!4v1710741304321!5m2!1sen!2sid"
+              width="100%" height="300" style={{ border: 0 }} allowFullScreen loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Google Maps Lokasi"
+              title="Lokasi Travel"
             ></iframe>
           </div>
           <div className="lokasi-video">
             <iframe
               width="100%" height="300"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              src="https://www.youtube.com/embed/somevideoid"
               title="YouTube Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
