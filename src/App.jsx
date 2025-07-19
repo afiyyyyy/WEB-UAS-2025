@@ -87,10 +87,6 @@ function App() {
             <h3>Pengiriman Paket Kilat</h3>
           </div>
           <div className="card">
-            <img src="/image/carter.jpg" alt="Carter Mobil" />
-            <h3>Carter Mobil</h3>
-          </div>
-          <div className="card">
             <img src="/image/layanan.jpg" alt="Layanan Wisata" />
             <h3>Layanan Wisata</h3>
           </div>
