@@ -5,7 +5,7 @@ function App() {
     <>
       {/* Navbar */}
       <div className="navbar">
-        <div>Muara Travel</div>
+        <div className="glitch">Travelyn</div>
         <div>
           <a href="#beranda">Beranda</a>
           <a href="#tentang">Tentang Kami</a>
@@ -13,17 +13,18 @@ function App() {
         </div>
       </div>
 
-      {/* Beranda (Hero + Zona Provinsi) */}
+      {/* Beranda (Hero dengan Video + Zona Provinsi) */}
       <section className="hero" id="beranda">
-        <div className="hero-image">
-          <img src="/image/pantai.jpg" alt="Gambar Pantai" />
-          <div className="hero-overlay">
-            <h1>TRAVELYN</h1>
-            <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
-            <div className="button-group">
-              <button className="btn-orange">Kirim Pesan</button>
-              <button className="btn-purple">Pesan Armada</button>
-            </div>
+        <video className="hero-video" autoPlay muted loop playsInline>
+          <source src="/video/beranda.mp4" type="video/mp4" />
+          Browsermu tidak mendukung video.
+        </video>
+        <div className="hero-overlay">
+          <h1>TRAVELYN</h1>
+          <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
+          <div className="button-group">
+            <button className="btn-orange">Kirim Pesan</button>
+            <button className="btn-purple">Pesan Armada</button>
           </div>
         </div>
 
@@ -89,6 +90,35 @@ function App() {
           <div className="card">
             <img src="/image/layanan.jpg" alt="Layanan Wisata" />
             <h3>Layanan Wisata</h3>
+          </div>
+        </div>
+      </section>
+
+      {/* Video & Maps Section */}
+      <section className="section video-maps">
+        <h2>LOKASI DAN VIDEO KAMI</h2>
+        <div className="video-maps-grid">
+          <div className="maps">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.4686248208486!2d110.3943581!3d-7.8416592999999985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57a7c3d58c8b%3A0x716446a47e154afe!2sJalan%20Raya%20Pati%20Tayu!5e0!3m2!1sid!2sid!4v1721400000000!5m2!1sid!2sid" 
+              width="100%" 
+              height="300" 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Lokasi Muara Travel"
+            ></iframe>
+          </div>
+          <div className="yt-video">
+            <iframe 
+              width="100%" 
+              height="300" 
+              src="https://www.youtube.com/embed/FV2z_XbPZ5A" 
+              title="YouTube video" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </section>

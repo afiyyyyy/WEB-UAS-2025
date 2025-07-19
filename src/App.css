@@ -129,3 +129,56 @@ footer {
   border-radius: 10px;
   margin: 2rem 0;
 }
+
+/* === Gaya Glitch untuk Navbar === */
+.glitch {
+  position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.glitch::before,
+.glitch::after {
+  content: 'Travelyn';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  background: transparent;
+}
+.glitch::before {
+  animation: glitchTop 2s infinite linear alternate-reverse;
+  top: -2px;
+  color: #f0f;
+}
+.glitch::after {
+  animation: glitchBottom 2s infinite linear alternate-reverse;
+  top: 2px;
+  color: #0ff;
+}
+
+@keyframes glitchTop {
+  0% { clip-path: inset(0 0 90% 0); transform: translateX(-2px); }
+  50% { clip-path: inset(0 0 20% 0); transform: translateX(2px); }
+  100% { clip-path: inset(0 0 90% 0); transform: translateX(-1px); }
+}
+
+@keyframes glitchBottom {
+  0% { clip-path: inset(90% 0 0 0); transform: translateX(2px); }
+  50% { clip-path: inset(10% 0 0 0); transform: translateX(-2px); }
+  100% { clip-path: inset(90% 0 0 0); transform: translateX(1px); }
+}
+
+/* === Hover Zoom Card === */
+.card {
+  max-width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
