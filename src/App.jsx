@@ -16,7 +16,7 @@ function App() {
       {/* Beranda (Hero + Zona Provinsi) */}
       <section className="hero" id="beranda">
         <div className="hero-image">
-          <img src="/hero-banner.jpg" alt="Banner Muara Travel" />
+          <img src="/images/pantai.jpg" alt="Gambar Pantai" />
           <div className="hero-overlay">
             <h1>MUARA TRAVEL</h1>
             <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
