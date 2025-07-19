@@ -79,19 +79,19 @@ function App() {
         <h2>LAYANAN KAMI</h2>
         <div className="grid">
           <div className="card">
-            <img src="/layanan1.jpg" alt="Travel Reguler" />
+            <img src="/image/travel.jpg" alt="Travel Reguler" />
             <h3>Travel Reguler</h3>
           </div>
           <div className="card">
-            <img src="/layanan2.jpg" alt="Pengiriman Paket" />
+            <img src="/image/gift.jpg" alt="Pengiriman Paket" />
             <h3>Pengiriman Paket Kilat</h3>
           </div>
           <div className="card">
-            <img src="/layanan3.jpg" alt="Carter Mobil" />
+            <img src="/image/carter.jpg" alt="Carter Mobil" />
             <h3>Carter Mobil</h3>
           </div>
           <div className="card">
-            <img src="/layanan4.jpg" alt="Layanan Wisata" />
+            <img src="/image/layanan.jpg" alt="Layanan Wisata" />
             <h3>Layanan Wisata</h3>
           </div>
         </div>
