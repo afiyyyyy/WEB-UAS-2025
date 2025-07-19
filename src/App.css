@@ -70,6 +70,13 @@
   background-color: #5a2c45;
   color: white;
 }
+
+/* === Section === */
+.section {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
 /* === Grid & Cards === */
 .grid {
   display: flex;
