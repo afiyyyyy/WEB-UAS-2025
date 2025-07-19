@@ -18,8 +18,8 @@ function App() {
         <div className="hero-image">
           <img src="/image/pantai.jpg" alt="Gambar Pantai" />
           <div className="hero-overlay">
-            <h1>TRAVELYN</h1>
-            <p>Travel murah, harga bersahabat, dan layanan terpercaya.</p>
+           <h1 className="sliced-text">TRAVELYN</h1>
+           <p className="sliced-text-desc">Travel murah, harga bersahabat, dan layanan terpercaya.</p>
             <div className="button-group">
               <button className="btn-orange">Kirim Pesan</button>
               <button className="btn-purple">Pesan Armada</button>

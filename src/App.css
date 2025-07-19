@@ -182,3 +182,71 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
+
+.sliced-text {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  overflow: hidden;
+  color: white;
+}
+
+.sliced-text::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.6);
+  animation: sliceAnim 2s infinite;
+}
+
+@keyframes sliceAnim {
+  0% {
+    top: 50%;
+    opacity: 0;
+  }
+  50% {
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    top: 50%;
+    opacity: 0;
+  }
+}
+
+.sliced-text-desc {
+  position: relative;
+  display: inline-block;
+  font-size: 1.2rem;
+  color: white;
+  overflow: hidden;
+}
+
+.sliced-text-desc::after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background: rgba(255, 255, 255, 0.4);
+  animation: sliceDescAnim 2.5s infinite ease-in-out;
+}
+
+@keyframes sliceDescAnim {
+  0% {
+    top: 60%;
+    opacity: 0;
+  }
+  50% {
+    top: 60%;
+    opacity: 1;
+  }
+  100% {
+    top: 60%;
+    opacity: 0;
+  }
+}
